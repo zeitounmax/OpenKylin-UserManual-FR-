@@ -1,0 +1,36 @@
+About UTF8_STRING
+This page was written in 2000, when UTF8_STRING was being initially deployed. Since then, support for UTF8_STRING has become widespread. In particular, anything claimed about XFree86 still applies to X.Org, and all recent toolkits have full support for UTF8_STRING.
+
+As far as I know, the draft provided below is still the only authoritative specification of UTF8_STRING.
+
+UTF8_STRING is a new X11 atom currently in the process of being standardised by X.Org. UTF8_STRING allows seamless interchange of international textual data between X11 clients; its main application is selection interchange (cut and paste).
+
+UTF8_STRING was carefully designed to preserve compatibility with existing X11 clients; a UTF8_STRING-enabled client will use UTF8_STRING for interchange with other new clients, and fall back to COMPOUND_TEXT when speaking to older clients.
+
+UTF8_STRING support should be provided by the widget set (user-interface library) that you are using, and hence be completely transparent to the programmer. You need to be aware of UTF8_STRING only if you write a new widget that uses raw Xlib or Xt functions to access the selection.
+
+UTF8_STRING is currently documented in this UTF8_STRING draft.
+
+UTF8_STRING support in XFree86 libraries
+A lot of support for UTF8_STRING is included in the XFree86 libraries since version 4.2 (most of this work was done by Bruno Haible). Thanks to these extensions, adding UTF8_STRING support to an existing clients can be done in a few lines of code.
+
+Notable changes include:
+
+the XICCEncodingStyle enumeration type has been extended with a XUTF8StringStyle member which represents UTF8_STRING;
+all utilities for interpreting text properties grok UTF8_STRING; this includes XTextPropertyToStringList, XmbTextPropertyToTextList, and XwcTextPropertyToTextList.
+all utilities to construct text properties accept XUTF8StringStyle as the property style; this includes XmbTextListToTextProperty and XwcTextListToTextProperty.
+In addition, a number of UTF-8 analogues to existing APIs have been included; these are Xutf8SetWMProperties, Xutf8TextListToTextProperty, Xutf8TextPropertyToTextList, as well as Xutf8TextEscapement, Xutf8TextExtents, Xutf8TextPerCharExtents, Xutf8DrawText, Xutf8DrawString, Xutf8DrawImageString, Xutf8ResetIC, Xutf8LookupString.
+
+UTF8_STRING support in clients
+Many X11 clients fully support UTF8_STRING for selection interchange; this includes:
+
+the XFree86 version of XTerm (see also the manual page);
+the XFree86 version of the Xaw text widget (and hence the xedit utility);
+KDE 2 applications;
+current versions of the Gtk+ toolkit, and hence current versions of Gnome;
+the X11 version of Mozilla and its variants;
+current versions of the Tk toolkit, and hence applications misguidedly written in Tcl/Tk.
+In order to conveniently insert arbitrary BMP characters into all properly internationalised X11 clients (including, to a certain extent, those that do not support UTF8_STRING), you may want to use the ucm utility.
+
+Further information
+For more information about Unicode support under Free Unix-like operating systems, please consult Markus Kuhn's Unicode FAQ.
