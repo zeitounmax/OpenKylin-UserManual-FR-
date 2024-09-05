@@ -1,28 +1,26 @@
-# openkylin基础 归档管理器 压缩与解压缩
-#### 作者：师万物
-#### 2022-11-21 22:38:16
+#Gestionnaire d'archives - Compression et décompression
+#### Auteur : Shi Wanwu
+#### 21-11-2022 22:38:16
 #### openKylin-0.7.5-x86_64
 
 &emsp;
 
-
 ![image](./assets/归档管理器_压缩与解压缩/ok-zip-1.png)
 
-归档管理器是一个压缩与解压缩的工具
+Le gestionnaire d'archives est un outil de compression et de décompression.
 
 ![image](./assets/归档管理器_压缩与解压缩/ok-zip-2.png)
 
-单个压缩包进行解压缩
+Décompression d'une archive individuelle
 
 ![image](./assets/归档管理器_压缩与解压缩/ok-zip-3.png)
 
-多个文件进行压缩
+Compression de plusieurs fichiers
 
 ![image](./assets/归档管理器_压缩与解压缩/ok-zip-4.png)
 
-设置密码与拆分
+Configuration du mot de passe et du fractionnement
 
 ![image](./assets/归档管理器_压缩与解压缩/ok-zip-5.png)
 
 &emsp;
-

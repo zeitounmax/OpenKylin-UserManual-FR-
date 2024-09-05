@@ -1,44 +1,43 @@
-# <center>无线网卡支持</center>
-#### <center>作者：小K</center>
-#### <center>2022-04-22 23:36:00</center>
+<center>Support des cartes réseau sans fil</center>
+<center>Auteur : Petit K</center>
+<center>22-04-2022 23:36:00</center>
 
 
 
+## Prise en Charges du Wifi
 
-## WifiDocs/WirelessCardsSupported(支持的无线卡)
+　　Si vous achetez un nouvel ordinateur, il est préférable d'en choisir un avec un composant sans fil, conçu pour les logiciels libres tels que Linux. Une carte réseau conçue pour les logiciels libres vous offre un meilleur support. Les appareils compatibles avec les logiciels libres fonctionnent également dès leur sortie de l'emballage.
 
-　　如果你要购买一台新电脑，最好选择带有无线组件的电脑，它是为Linux等免费软件设计的。为免费软件设计的网卡能给你提供更好的支持。兼容免费软件的设备也可以开箱即用。
+Actuellement, [ThinkPenguin.com] (http://thinkpenguin.com/) propose une carte USB 802.11N avec le chipset AR9170, qui garantit la compatibilité avec les logiciels libres. Il existe également des cartes wifi MiniPCI pour ordinateurs portables et des adaptateurs Bluetooth USB pour la connexion de périphériques sans fil Bluetooth.
 
-　　1.目前[ThinkPenguin.com](http://thinkpenguin.com/)提供了一款采用AR9170芯片组的802.11N USB卡，可以保证免费软件的兼容性。此外，还有用于笔记本电脑的MiniPCI wifi卡和连接蓝牙无线设备的USB蓝牙适配器。
-　　2.[Passys](http://www.passys.nl/wirelessnetwork)销售的PCI卡与Linux兼容（虽然不兼容免费软件），适用于台式电脑。
-　　3.[维基百科](http://en.wikipedia.org/wiki/Comparison_of_open_source_wireless_drivers)有更多关于哪些芯片组和驱动程序是免费软件兼容的信息。
-　　4.其他一些卡也兼容Linux，但不兼容自由软件。这些通常可以工作，但在某些情况下可能无法工作。
+　[Passys](http://www.passys.nl/wirelessnetwork) vend des cartes PCI compatibles avec Linux (mais pas avec les logiciels libres) pour les ordinateurs de bureau.
 
-　　即使您的无线网卡没有为Ubuntu设计的驱动程序，您也可以使用[NDISWrapper](http://ndiswrapper.sourceforge.net/)和微软Windows的驱动程序让它工作。但这是以牺牲功能和可靠性为代价的。如果您使用这种方法，您的网络连接很可能会很不稳定。
+　[Wikipedia](http://en.wikipedia.org/wiki/Comparison_of_open_source_wireless_drivers) fournit de plus amples informations sur les jeux de puces et les pilotes compatibles avec les logiciels libres.
 
-　　其他Ubuntu的无线网络维基页面。
+D'autres cartes sont également compatibles avec Linux, mais pas avec les logiciels libres. Elles fonctionnent généralement, mais pas toujours.
 
-　　1.[Wifi信息的中心页面](https://help.ubuntu.com/community/WifiDocs)
-　　2.[WifiDocs/WirelessTroubleShootingGuide(无线故障排除指南)](https://help.ubuntu.com/community/WifiDocs/WirelessTroubleShootingGuide)
-　　3.[无线故障排除程序](https://help.ubuntu.com/community/WirelessTroubleshootingProcedure)
+Même si votre carte sans fil n'a pas de pilotes conçus pour Ubuntu, vous pouvez la faire fonctionner en utilisant [NDISWrapper] (http://ndiswrapper.sourceforge.net/) et des pilotes pour Microsoft Windows. Mais cela se fait au détriment de la fonctionnalité et de la fiabilité. Si vous utilisez cette méthode, votre connexion réseau sera probablement irrégulière.
 
-### 无线卡
-　　要确定你的无线网卡/芯片组是什么，首先要确定它是否是一个独立的设备插在电脑上。如果是独立的USB设备，打开终端，输入以下内容。
+　　Autres pages du wiki Ubuntu sur les réseaux sans fil.
 
-<li style="background:	#DCDCDC">lsusb</li>
+　　1. [Page centrale pour les informations Wifi](https://help.ubuntu.com/community/WifiDocs)
 
-　　并查找 "无线 "等字样，以找到你的卡类型。　　
-　　对于非USB芯片但包含在计算机中的芯片，输入以下内容。
+　　2. [WifiDocs/WirelessTroubleShootingGuide](https://help.ubuntu.com/community/WifiDocs/WirelessTroubleShootingGuide)
 
-<li style="background:	#DCDCDC">lspci -v</li>
+　　3. [Procédures de dépannage sans fil](https://help.ubuntu.com/community/WirelessTroubleshootingProcedure)
 
-　　并阅读最后一节。
+### Cartes sans fil
+Pour déterminer le type de votre carte/chipset sans fil, vérifiez d'abord s'il s'agit d'un périphérique séparé branché sur l'ordinateur. S'il s'agit d'un périphérique USB indépendant, ouvrez un terminal et saisissez la commande suivante :
+<li style="background: #DCDCDC">lsusb</li>
+Recherchez des termes comme "wireless" (sans fil) pour identifier le type de votre carte.
+Pour les chipsets non-USB intégrés à l'ordinateur, saisissez la commande suivante :
+<li style="background: #DCDCDC">lspci -v</li>
+Et lisez la dernière section du résultat.
 
-### 按制造商
-　　社区已经为以下制造商创建了文章。
+### Par fabricant
+La communauté a créé des articles pour les fabricants suivants.
 
-
- | 制造商 | 网卡类型  |
+ | Fabricant | Type de carte réseau  |
  | ----  | -------- |
  | 3Com  | PCMCIA、PCI、PCI、Low、Profile、USB |
  | A-Link | USB |
@@ -108,10 +107,10 @@
  | Various | miniPCI USB |
 
 
-### 按版本
-请参阅本页面。[WifiDocs/WirelessCardsByVersion(无线卡按版本分类)](https://help.ubuntu.com/community/WifiDocs/WirelessCardsByVersion)
+### Par version
+Veuillez consulter cette page : [WifiDocs/WirelessCardsByVersion(无线卡按版本分类)](https://help.ubuntu.com/community/WifiDocs/WirelessCardsByVersion)
 
-### 按网卡
+### Par Carte Reseau :
 
 1.[WifiDocs/Device](https://help.ubuntu.com/community/WifiDocs/Device)
 2.[WifiDocs/Device/ADDON_ADD-GWP110](https://help.ubuntu.com/community/WifiDocs/Device/ADDON_ADD-GWP110)
