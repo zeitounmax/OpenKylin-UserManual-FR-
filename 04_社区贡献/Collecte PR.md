@@ -1,11 +1,11 @@
 ---
-title: PR任务合集
-description: 
+title: Collection de tâches PR
+description:
 published: true
 date: 2022-05-17T07:16:15.091Z
-tags: 
+tags:
 editor: markdown
 dateCreated: 2022-03-11T03:16:40.942Z
 ---
 
-# PR任务合集
+# Collection de tâches PR

@@ -1,5 +1,5 @@
 ---
-title: 查看源代码
+title: Consulter le code source
 description: 
 published: true
 date: 2022-05-17T07:16:18.690Z
@@ -8,4 +8,4 @@ editor: markdown
 dateCreated: 2022-03-11T03:16:56.375Z
 ---
 
-# 查看源代码
+# Consulter le code source

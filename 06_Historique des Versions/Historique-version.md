@@ -1,4 +1,5 @@
-# 版本发布动态
+# Historique des versions de OpenKylin :
+
 - openKylin 2.0 RC（2024-7-12）
 - openKylin 2.0 Alpha (2024-04-30)
 - openKylin 1.0.1 (2023-09-22)
